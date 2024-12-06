@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Comfortaa:wght@300..700&family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --light:rgba(230, 255, 148, 1);
+    --dark:rgba(0, 103, 105, 1);
+    --mid:rgba(64, 165, 120, 1);
+    --lagoo:rgba(157, 222, 139, 1);
+    --black:#000000;
+    --grey:#D3D3D3;
+    --footer:#B3E3CD;
+    --logo:#004445;
+    --beige:#F2FFD0;
+    --pink: #ff0099;
+
+}
+
+
+body {
+    background: linear-gradient(to bottom, #E6FF94, #A8DCC5);
+    height: 100%;
+}
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+/* Шапка */
+.container-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #006769, #E6FF94);
+    height: 100px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+.back-btn {
+    position: absolute; 
+    left: 20px;
+    background-color: var(--footer); 
+    color: var(--logo); 
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px; 
+    cursor: pointer;
+    font-size: 14px; 
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.container-head h1 {
+    font-size: 40px;
+    color: #004445;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Itim";
+    
+}
+
+/* Кнопки категорий */
+.categories {
+    width: 100%; 
+    display: flex;
+  box-sizing: border-box;
+  background-color: var(--grey);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  
+}
+.category{
+    width: 70px;
+    height: 75px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 0 20px;
+}
+
+
+
+
+
+/* Карточки с работой */
+.job-card {
+    background-color: #5CB7B6;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.job-grey{
+    background-color: #AEDBDB;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.job-card h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+}
+
+.job-details p {
+    color: black;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/*Регистрация*/
+.registration{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color:#004445;
+    font-family: "Itim";
+    
+}
+.who-are{
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color:#004445; 
+}
+.who-are-btn{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--logo);
+    background-color: var(--beige);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 10px;
+}
+/**/
+.registration-form {
+    margin-top: 20px;
+}
+button {
+    padding: 12px;
+    background-color: #006769;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+label {
+    font-size: 14px;
+    color: #006769;
+    margin-bottom: 5px;
+}
+/*parent view*/
+.initials-child{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color:#004445;
+    font-family: "Itim";
+    margin: 20px;
+}
+.task {
+   
+    padding: 20px;
+    margin: 10px ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: var(--logo);
+    background: linear-gradient(to right, #006769, #C3D48F);
+}
+.task-status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--logo);
+   
+   
+}
+/*employe*/
+.employe-main{
+    height: 100%;
+  margin: 10px;
+}
+.btn-employe{
+    height: 40px;
+    width: 100%;
+    color: var(--logo);
+    background-color: var(--footer);
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.bell{
+    right: 2px;
+    position: absolute; 
+}
+/*vacancy*/
+.vacancy{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    color: var(--logo);
+    margin: 10px;
+}
+.descryption{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--beige);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: var(--logo);
+}
+.salary{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--beige);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: var(--logo);
+}
+.course{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--beige);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: var(--logo);
+}
+/*teens*/
+.teens{
+    height: 100%;
+    width: auto;
+    text-align: center;
+    color: var(--logo);
+    margin: 10px;
+    
+}
+.teen{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--beige);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: var(--logo);
+}
+.delete{
+    margin-top: 10px;
+}

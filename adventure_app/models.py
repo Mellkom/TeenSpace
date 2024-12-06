@@ -34,29 +34,3 @@ class Vakanсy(models.Model):
 
     def __str__(self):
         return self.name
-
-class CustomUser(AbstractUser):
-    ROLE_CHOICES = [
-        ('parent', 'Родитель'),
-        ('child', 'Ребенок'),
-        ('employer', 'Работодатель'),
-    ]
-    role = models.CharField(max_length=10, choices=ROLE_CHOICES)
-
-    groups = models.ManyToManyField(
-        'auth.Group', 
-        related_name='customuser_groups',
-        blank=True
-    )
-    
-    user_permissions = models.ManyToManyField(
-        'auth.Permission', 
-        related_name='customuser_permissions',
-        blank=True
-    )
-
-class ChildProfile(models.Model):
-    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='child_profile')
-    parent = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='children', limit_choices_to={'role': 'parent'})
-    school_name = models.CharField(max_length=100)
-    grade = models.IntegerField()

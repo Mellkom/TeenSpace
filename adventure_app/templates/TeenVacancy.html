@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div class="categories">
+        {% for category in categories %}
+        <div class="category">
+         <img src="{{ category.image.url }}" alt="smm">
+         <p>{{category.name}}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% for vakancy in vakancys %}
+    <a href="{% url 'teendescription' %}">
+        <div class="job-card">
+            <div class="job-grey">
+                <h2>{{ category.name }}</h2>
+                <div class="job-details">
+                    <p> {{ vakancy.name }} </p>
+                    <p> {{ vakancy.cost }} </p>
+                </div>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+    
+    
+
+    <div class="job-card">
+        <div class="job-grey">
+            <h2>доставка</h2>
+            <div class="job-details">
+                <p>Название ИП</p>
+                <p>25 тыс. тенге</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="job-card">
+        <div class="job-grey">
+            <h2>промоутер</h2>
+          <div class="job-details">
+             <p>Название ИП</p>
+             <p>50 тыс. тенге</p>
+           </div>
+        </div>
+
+    </div>
+
+{% endblock %}

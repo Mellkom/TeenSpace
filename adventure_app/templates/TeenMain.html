@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    
+    <div class="employe-main">
+        <div class="btn-employe">
+            <a href="{% url 'teenVacancy' %}">
+                <h2>Мои вакансии</h2> 
+            </a>
+        </div>
+        <div class="btn-employe">
+            <a href="{% url 'teenTask' %}">
+                <h2>Мои задачи</h2>
+            </a>
+        </div> 
+    </div>
+
+{% endblock %}

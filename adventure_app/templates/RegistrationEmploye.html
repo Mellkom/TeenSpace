@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div class="registration-form">
+        <div class="registration">
+            <h1>Регистрация</h1>
+        </div>
+        <form>
+            <label for="login">Ваш логин</label>
+            <input type="text" id="login" placeholder="Логин" required>
+
+            <label for="password">Ваш пароль</label>
+            <input type="password" id="password" placeholder="Пароль" required>
+
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" placeholder="Номер телефона" required>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+    
+{% endblock %}

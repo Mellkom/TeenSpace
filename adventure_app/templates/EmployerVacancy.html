@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    {% for vakancy in vakancys %}
+    <div class="job-card">
+        <div class="job-grey">
+           <h2> монтаж</h2>
+          <div class="job-details">
+              <p>Название ИП</p>
+              <p>200 тыс. тенге</p>
+           </div>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
