@@ -13,3 +13,18 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Vakanсy
         fields = ['name', 'category', 'author', 'cost', 'phone', 'course']
+
+class ChildRegistrationForm(UserCreationForm):
+    class Meta:
+        model = User
+        fields = ('username', 'password1')
+
+class ParentRegistrationForm(UserCreationForm):
+    class Meta:
+        model = User
+        fields = ('username', 'password1')
+
+class EmployerRegistrationForm(UserCreationForm):
+    class Meta:
+        model = User
+        fields = ('username', 'password1')

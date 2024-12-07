@@ -202,6 +202,7 @@ label {
   margin: 10px;
 }
 .btn-employe{
+    text-decoration: none;
     height: 40px;
     width: 100%;
     color: var(--logo);
@@ -214,6 +215,7 @@ label {
     right: 2px;
     position: absolute; 
 }
+
 /*vacancy*/
 .vacancy{
     height: 60px;
@@ -222,6 +224,7 @@ label {
     color: var(--logo);
     margin: 10px;
 }
+
 .descryption{
     height: auto;
     width: 100%;

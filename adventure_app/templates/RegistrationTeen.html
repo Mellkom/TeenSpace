@@ -9,6 +9,8 @@
             <h1>Регистрация</h1>
         </div>
         <form>
+            {% csrf_token %}
+            {{ form.as_p }}
             <label for="login">Ваш логин</label>
             <input type="text" id="login" placeholder="Логин" required>
 
@@ -20,8 +22,9 @@
 
             <label for="age">Возраст</label>
             <input type="number" id="age" placeholder="Возраст" required>
-
-            <button type="submit">Зарегистрироваться</button>
+            <a href="{% url 'register_child' %}">
+                <button type="submit">Зарегистрироваться</button>
+            </a>
         </form>
     </div>
     

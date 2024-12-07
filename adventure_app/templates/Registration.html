@@ -11,15 +11,23 @@
         <p>Кем вы являетесь?</p>
     </div>
     <div class="btns">
-        <button class="who-are-btn">
+        <a href="{% url 'parentProf' %}">
+            <button class="who-are-btn">
                 <p>Родитель</p>
-        </button>
-        <button class="who-are-btn">
+            </button>
+        </a>
+
+        <a href="{% url 'teenProf' %}">
+            <button class="who-are-btn">
                 <p>Подросток</p>
-        </button>
-        <button class="who-are-btn">
+            </button>
+        </a>
+
+        <a href="{% url 'employProf' %}">
+            <button class="who-are-btn">
                 <p>Работодатель</p>
-        </button>
+            </button>
+        </a>
     </div>
     
 {% endblock %}

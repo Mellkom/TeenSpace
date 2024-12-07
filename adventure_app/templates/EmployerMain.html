@@ -3,18 +3,22 @@
 
 
 {% block content %}
-    
+
     <div class="employe-main">
         <div class="btn-employe">
-            <a href="{% url 'empVacancy' %}">
-                <h2>Мои вакансии</h2> 
+            <a href="{% url 'empTeen' %}">
+                <h2>Мои вакансии</h2>
             </a>
         </div>
         <div class="btn-employe">
-            <h2>Поиск подростков</h2>   
+            <a href="{% url 'empTeen' %}">
+                <h2>Поиск подростков</h2> 
+            </a>
         </div>
         <div class="btn-employe">
-            <h2>Подростки</h2>   
+            <a href="{% url 'empMyTeen' %}">
+                <h2>Подростки</h2>   
+            </a>
         </div>
         
     </div>
